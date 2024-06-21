@@ -1,0 +1,426 @@
+/* ***************************************
+Template Name: NEXCENT || IT Business Organization HTML Template
+Author: Ramen Biswas
+Author Email: printrb72@gmail.com
+website: http://www.devsramen.com/
+Version: 1.0
+Description: NEXCENT is Multi Page HTML Template designed for IT Business Organization. It is designed with a Unique and clean & modern Look. This template is designed based on Bootstrap5 Grid System. You can customize it very easily to fit your needs. NEXCENT is a fully responsive layout. It fits perfectly on various displays and resolutions from regular desktop screens to tablets, iPads, iPhones, and small mobile devices.
+***************************************
+
+CSS TABLE OF CONTENTS
+===================================
+01. GLOBAL CSS 
+02. HOME PAGE
+03. ABOUT US PAGE
+04. MENU PAGE
+05. CONTACT PAGE
+06. BLOG DETAILS PAGE
+07. MENU DETAILS PAGE
+08. CART VIEW PAGE
+09. CHECKOUT PAGE
+10. SIGN IN PAGE
+11. PAYMENT PAGE
+12. FAQ PAGE
+13. TERMS AND CONDITION PAGE
+14. 404 PAGE
+15. DASHBOARD PAGE
+
+
+/*================================
+    GLOBAL CSS START
+================================*/
+html, body{
+    scroll-behavior: smooth !important;
+}
+
+/* ======== Reset Code Started ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--colorPrar);
+    /* overflow-x: hidden; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    color: var(--colorHead);
+}
+
+p,
+a,
+span {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    color: var(--colorPrar);
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    outline: none;
+    resize: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 300;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--colorPrar);
+    text-transform: capitalize;
+}
+
+/* ======== Reset Code Ended ========= */
+
+/* ======== Common CSS Code Start ========= */
+:root{
+    --colorHead: #4D4D4D;
+    --colorPrar : #717171;
+    --colorTheam : #4CAF4F;
+}
+.commonBtn{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--colorTheam);
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border: 1px solid var(--colorTheam);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.commonBtn:hover{
+    color: #fff;
+    background-color: var(--colorTheam);
+}
+.sectionHeader{
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--colorHead);
+}
+/*  */
+/* ======== Common CSS Code Ended ========= */
+
+/*================================
+    GLOBAL CSS START
+================================*/
+#header {
+    width: 100%;
+    background-color: #F5F7FA;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.navItem{
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #18191F;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.navItem:hover{
+    font-weight: 400;
+    color: var(--colorTheam);
+}
+
+.navMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+/*================================
+    GLOBAL CSS ENDED
+================================*/
+
+/*================================
+    BANNER CSS START
+================================*/
+#banner{
+    background-color: #F5F7FA;
+}
+.bannerTitle{
+    font-size: 64px;
+    font-weight: 700;
+}
+.bannerTitle span{
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--colorTheam);
+}
+.bannerImage{
+    width: 390px;
+}
+
+/*================================
+    BANNER CSS ENDED
+================================*/
+
+/*================================
+    OUR CLIENTS CSS START
+================================*/
+.clientLogo{
+    width: 50px;
+    height: 50px;
+}
+/*================================
+    OUR CLIENTS CSS ENDED
+================================*/
+
+/*================================
+    SYSTEM CSS START
+================================*/
+#system .card{
+    width: 300px;
+}
+.systemCardImage{
+    width: 65px;
+    height: 56px;
+}
+
+/*================================
+    SYSTEM CSS ENDED
+================================*/
+
+/*================================
+    PIXELGRADE CSS START
+================================*/
+.pixelgradeImage{
+    width: auto;
+    height: 328px;
+}
+
+/*================================
+    PIXELGRADE CSS ENDED
+================================*/
+
+/*================================
+    HELP CSS START
+================================*/
+#help{
+    background: #F5F7FA;
+}
+.sectionHeader span{
+    font-size: inherit;
+    font-weight: inherit;
+    color: var(--colorTheam);
+}
+.helpIcon{
+    width: 230px;
+}
+.helpImage{
+    width: 48px;
+    object-fit: cover;
+}
+
+/*================================
+    HELP CSS ENDED
+================================*/
+
+/*================================
+    DESIGN CSS START
+================================*/
+.designImage{
+    width: auto;
+    height: 428px;
+}
+.designPara{
+    text-align: justify;
+}
+
+/*================================
+    DESIGN CSS ENDED
+================================*/
+
+/*================================
+    COMMENTS CSS START
+================================*/
+.commentsImage{
+    margin: 0 auto;
+    width: 326px;
+    height: 326px;
+}
+.customersLogoWrapper{
+    width: 65%;
+}
+.tim,
+.meetCustomer{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--colorTheam);
+}
+.meetCustomer i{
+    margin-left: 5px;
+}
+/*================================
+    COMMENTS CSS ENDED
+================================*/
+
+/*================================
+    MARKETING CSS START
+================================*/
+.marketingPara{
+    padding: 5px 350px;
+}
+#marketing .card-body {
+    height: 85px;
+    position: relative;
+}
+.card{
+    border: 0;
+}
+.card_Body_Wrapper {
+    width: 80%;
+    background: #F5F7FA;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    padding: 20px 32px !important;
+}
+.mar_cardBodyTitle{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--colorPrar);
+}
+/*================================
+    MARKETING CSS ENDED
+================================*/
+
+/*================================
+    DEMO CSS START
+================================*/
+#demo{
+    background: #F5F7FA;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+.demoTitle{
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #263238;
+}
+/*================================
+    DEMO CSS ENDED
+================================*/
+
+/*================================
+    FOOTER CSS START
+================================*/
+#footer {
+    background: #263238;
+    padding: 70px 0 40px 0;
+}
+.footerPara{
+    color: #F5F7FA;
+}
+
+.footerIcons i{
+    width: 32px;
+    height: 32px;
+    /* font-size: 20px; */
+    line-height: 32px;
+    text-align: center;
+    color: #F5F7FA;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.footerinfoTitle{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.footerinfo{
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 400;
+    color: #F5F7FA;
+}
+.footerinput{
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.footerinput input{
+    background-color: transparent;
+    border: none;
+}
+.footerinput i,
+.footerinput input::placeholder
+{
+    color: #D9DBE1;
+}
+/*================================
+    FOOTER CSS ENDED
+================================*/
